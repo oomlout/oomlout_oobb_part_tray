@@ -106,7 +106,7 @@ def make_scad(**kwargs):
         elif oomp_mode == "oobb":
             kwargs["oomp_classification"] = "oobb"
             kwargs["oomp_type"] = "part"
-            kwargs["oomp_size"] = "tray_vertical"
+            kwargs["oomp_size"] = "tray"
             kwargs["oomp_color"] = ""
             kwargs["oomp_description_main"] = ""
             kwargs["oomp_description_extra"] = ""
@@ -124,7 +124,7 @@ def make_scad(**kwargs):
         extras.append("")
         
 
-        depths = [30,45,60,75,90]
+        depths = [12,15,21,30,45,60,75,90]
         widths = [1,1.5,2,3,4,5,6,7,8,9,10,12,14,15]
         heights = [1,1.5,2,3,4,5,6,7,8,9,10,12,14,15]
 
@@ -152,7 +152,7 @@ def make_scad(**kwargs):
                         if extra != "":
                             p3["extra"] = extra
                         part["kwargs"] = p3
-                        nam = "tray_vertical"
+                        nam = "tray"
                         part["name"] = nam
                         if oomp_mode == "oobb":
                             p3["oomp_size"] = nam
