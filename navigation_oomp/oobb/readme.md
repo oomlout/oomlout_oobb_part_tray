@@ -1,6 +1,0 @@
-* [part](part)
-  * [tray](part/tray)
-    * [3_width_2_height_15_mm_depth](part/tray/3_width_2_height_15_mm_depth)
-  * [tray_vertical](part/tray_vertical)
-    * [2_width_15_height_60_mm_depth](part/tray_vertical/2_width_15_height_60_mm_depth)
-    * [2_width_15_height_90_mm_depth](part/tray_vertical/2_width_15_height_90_mm_depth)

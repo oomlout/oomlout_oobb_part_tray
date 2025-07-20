@@ -125,11 +125,11 @@ def make_scad(**kwargs):
         
 
         depths = [12,15,21,30,45,60,75,90]
-        depths = [15]
+        #depths = [15]
         widths = [1,1.5,2,3,4,5,6,7,8,9,10,12,14,15]
-        widths = [3]
+        #widths = [3]
         heights = [1,1.5,2,3,4,5,6,7,8,9,10,12,14,15]
-        heights = [2]
+        #heights = [2]
 
         if False:
             depths = [60]
