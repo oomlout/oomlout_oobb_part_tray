@@ -59,8 +59,8 @@ thing:
       pos:
       - 0
       - 0
-      - 2.9925
-      r: 4
+      - 2
+      radius: 4
       shape: sphere_rectangle
       size:
       - 117.0
@@ -68,22 +68,9 @@ thing:
       - 57
       type: negative
       width: 8
-  - - height: 3
-      pos:
-      - 0
-      - 0
-      - 2.9925
-      r: 2
-      shape: sphere_rectangle
-      size:
-      - 117.0
-      - 42.0
-      - -3
-      type: negative_negative
-      width: 8
   - - objects:
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.7
           height: 3
           inclusion: laser
@@ -97,7 +84,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: laser
@@ -110,32 +97,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id001
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.5
           radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id001
           r: 1.5
+          radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id001
@@ -145,7 +133,7 @@ thing:
           type: positive
           width: 8
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.9
           height: 3
           inclusion: 3dpr
@@ -159,7 +147,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: 3dpr
@@ -172,32 +160,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id002
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.8
           radius: 1.8
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id002
           r: 1.8
+          radius: 1.8
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id002
@@ -207,7 +196,7 @@ thing:
           type: positive
           width: 8
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.7
           height: 3
           inclusion: 'true'
@@ -221,7 +210,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: 'true'
@@ -234,32 +223,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id003
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.5
           radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id003
           r: 1.5
+          radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id003
@@ -271,7 +261,7 @@ thing:
       pos:
       - -52.5
       - -15.0
-      - 3
+      - 2
       rot:
       - 0
       - 0
@@ -280,7 +270,7 @@ thing:
       typetype: n
   - - objects:
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.7
           height: 3
           inclusion: laser
@@ -294,7 +284,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: laser
@@ -307,32 +297,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id004
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.5
           radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id004
           r: 1.5
+          radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id004
@@ -342,7 +333,7 @@ thing:
           type: positive
           width: 8
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.9
           height: 3
           inclusion: 3dpr
@@ -356,7 +347,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: 3dpr
@@ -369,32 +360,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id005
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.8
           radius: 1.8
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id005
           r: 1.8
+          radius: 1.8
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id005
@@ -404,7 +396,7 @@ thing:
           type: positive
           width: 8
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.7
           height: 3
           inclusion: 'true'
@@ -418,7 +410,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: 'true'
@@ -431,32 +423,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id006
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.5
           radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id006
           r: 1.5
+          radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id006
@@ -468,7 +461,7 @@ thing:
       pos:
       - 52.5
       - -15.0
-      - 3
+      - 2
       rot:
       - 0
       - 0
@@ -477,7 +470,7 @@ thing:
       typetype: n
   - - objects:
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.7
           height: 3
           inclusion: laser
@@ -491,7 +484,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: laser
@@ -504,32 +497,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id007
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.5
           radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id007
           r: 1.5
+          radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id007
@@ -539,7 +533,7 @@ thing:
           type: positive
           width: 8
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.9
           height: 3
           inclusion: 3dpr
@@ -553,7 +547,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: 3dpr
@@ -566,32 +560,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id008
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.8
           radius: 1.8
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id008
           r: 1.8
+          radius: 1.8
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id008
@@ -601,7 +596,7 @@ thing:
           type: positive
           width: 8
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.7
           height: 3
           inclusion: 'true'
@@ -615,7 +610,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: 'true'
@@ -628,32 +623,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id009
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.5
           radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id009
           r: 1.5
+          radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id009
@@ -665,7 +661,7 @@ thing:
       pos:
       - -52.5
       - 15.0
-      - 3
+      - 2
       rot:
       - 0
       - 0
@@ -674,7 +670,7 @@ thing:
       typetype: n
   - - objects:
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.7
           height: 3
           inclusion: laser
@@ -688,7 +684,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: laser
@@ -701,32 +697,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id010
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.5
           radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id010
           r: 1.5
+          radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id010
@@ -736,7 +733,7 @@ thing:
           type: positive
           width: 8
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.9
           height: 3
           inclusion: 3dpr
@@ -750,7 +747,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: 3dpr
@@ -763,32 +760,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id011
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.8
           radius: 1.8
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id011
           r: 1.8
+          radius: 1.8
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id011
@@ -798,7 +796,7 @@ thing:
           type: positive
           width: 8
       - - clearance: top
-          depth: 3
+          depth: 2
           h: 1.7
           height: 3
           inclusion: 'true'
@@ -812,7 +810,7 @@ thing:
           type: positive
           width: 8
       - - - clearance: top
-            depth: 3
+            depth: 2
             h: 250
             height: 3
             inclusion: 'true'
@@ -825,32 +823,33 @@ thing:
             type: positive
             width: 8
       - - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: laser
           pos: &id012
           - 0
           - 0
-          - -3.0
+          - -2.0
           r: 1.5
           radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 3dpr
           pos: *id012
           r: 1.5
+          radius: 1.5
           shape: cylinder
           type: positive
           width: 8
         - clearance: top
-          depth: 3
-          h: 3
+          depth: 2
+          h: 2
           height: 3
           inclusion: 'true'
           pos: *id012
@@ -862,7 +861,7 @@ thing:
       pos:
       - 52.5
       - 15.0
-      - 3
+      - 2
       rot:
       - 0
       - 0
@@ -916,7 +915,7 @@ thing:
     pos:
     - 0
     - 0
-    - 2.9925
+    - 2
     radius: 4
     save_type: all
     shape: sphere_rectangle
@@ -928,39 +927,8 @@ thing:
     typ: all
     type: negative
     width: 8
-  - filter: ''
-    height: 3
-    modes:
-    - 3dpr
-    navigation: true
-    oomp_classification: oobb
-    oomp_color: ''
-    oomp_description_extra: ''
-    oomp_description_main: ''
-    oomp_manufacturer: ''
-    oomp_mode: oobb
-    oomp_part_number: ''
-    oomp_run: true
-    oomp_size: tray
-    oomp_type: part
-    overwrite: false
-    pos:
-    - 0
-    - 0
-    - 2.9925
-    radius: 2
-    save_type: all
-    shape: sphere_rectangle
-    size:
-    - 117.0
-    - 42.0
-    - -3
-    thickness: 12
-    typ: all
-    type: negative_negative
-    width: 8
   - clearance: top
-    depth: 3
+    depth: 2
     filter: ''
     height: 3
     modes:
@@ -980,7 +948,7 @@ thing:
     pos:
     - -52.5
     - -15.0
-    - 3
+    - 2
     radius_name: m3
     save_type: all
     shape: oobb_screw_countersunk
@@ -989,7 +957,7 @@ thing:
     type: n
     width: 8
   - clearance: top
-    depth: 3
+    depth: 2
     filter: ''
     height: 3
     modes:
@@ -1009,7 +977,7 @@ thing:
     pos:
     - 52.5
     - -15.0
-    - 3
+    - 2
     radius_name: m3
     save_type: all
     shape: oobb_screw_countersunk
@@ -1018,7 +986,7 @@ thing:
     type: n
     width: 8
   - clearance: top
-    depth: 3
+    depth: 2
     filter: ''
     height: 3
     modes:
@@ -1038,7 +1006,7 @@ thing:
     pos:
     - -52.5
     - 15.0
-    - 3
+    - 2
     radius_name: m3
     save_type: all
     shape: oobb_screw_countersunk
@@ -1047,7 +1015,7 @@ thing:
     type: n
     width: 8
   - clearance: top
-    depth: 3
+    depth: 2
     filter: ''
     height: 3
     modes:
@@ -1067,7 +1035,7 @@ thing:
     pos:
     - 52.5
     - 15.0
-    - 3
+    - 2
     radius_name: m3
     save_type: all
     shape: oobb_screw_countersunk
@@ -1077,12 +1045,11 @@ thing:
     width: 8
   components_string:
   - oobb_plate_shape_positive_type_12_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8.066666666666666_width_3.066666666666667_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size
-  - sphere_rectangle_shape_negative_type_0_0_2.9925_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_4_radius_117.0_42.0_57_size
-  - sphere_rectangle_shape_negative_negative_type_0_0_2.9925_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_2_radius_117.0_42.0_-3_size
-  - oobb_screw_countersunk_shape_n_type_m3_radius_name_3_depth_-52.5_-15.0_3_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
-  - oobb_screw_countersunk_shape_n_type_m3_radius_name_3_depth_52.5_-15.0_3_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
-  - oobb_screw_countersunk_shape_n_type_m3_radius_name_3_depth_-52.5_15.0_3_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
-  - oobb_screw_countersunk_shape_n_type_m3_radius_name_3_depth_52.5_15.0_3_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
+  - sphere_rectangle_shape_negative_type_0_0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_4_radius_117.0_42.0_57_size
+  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_-52.5_-15.0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
+  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_52.5_-15.0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
+  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_-52.5_15.0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
+  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_52.5_15.0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_8_width_3_height_12_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
   description: oomlout oobb part tray tray 8x3x12
   description_extra: ''
   description_main: 8_width_3_height_12_mm_depth

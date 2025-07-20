@@ -125,8 +125,11 @@ def make_scad(**kwargs):
         
 
         depths = [12,15,21,30,45,60,75,90]
+        depths = [15]
         widths = [1,1.5,2,3,4,5,6,7,8,9,10,12,14,15]
+        widths = [3]
         heights = [1,1.5,2,3,4,5,6,7,8,9,10,12,14,15]
+        heights = [2]
 
         if False:
             depths = [60]
@@ -222,7 +225,7 @@ def get_base(thing, **kwargs):
     
     #add hollow out 
     if True:
-        thickness_bottom = 3
+        thickness_bottom = 2
         thickness_wall = 1.5
         radius_sphere = 4        
         p3 = copy.deepcopy(kwargs)
@@ -237,19 +240,12 @@ def get_base(thing, **kwargs):
         pos1 = copy.deepcopy(pos)
         pos1[0] += 0#60
         pos1[1] += 0
-        pos1[2] += -0.0075 + thickness_bottom
+        pos1[2] += thickness_bottom
         p3["pos"] = pos1
         #p3["m"] = "#"
         oobb_base.append_full(thing,**p3)
 
-        #add cutout for bracket
-        p4 = copy.deepcopy(p3)
-        p4["type"] = "negative_negative"
-        p4["radius"] = 2
-        p4["size"][2] = depth - 15
-        p3["m"] = "#"
-        oobb_base.append_full(thing,**p4)
-    
+        
     #add counter sunk screws in corners
     if True:
         #add holes seperate
@@ -285,99 +281,7 @@ def get_base(thing, **kwargs):
         p3["pos"] = poss
         oobb_base.append_full(thing,**p3)
 
-    #add vertical bracket
-    if False:
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "positive_positive"
-        p3["shape"] = f"oobb_plate"
-        p3["width"] = width
-        p3["height"] = 2
-        p3["depth"] = 3      
-        if "magnet" in extra:  
-            p3["depth"] = 6
-        #p3["m"] = "#"
-        pos1 = copy.deepcopy(pos)
-        pos1[0] += 0
-        pos1[1] += height * 15 / 2
-        pos1[2] += depth
-        p3["pos"] = pos1
-        rot1 = copy.deepcopy(rot)
-        rot1[0] = 90
-        p3["rot"] = rot1
-        oobb_base.append_full(thing,**p3)
-        
-        #add holes
-        if True:
-            p3 = copy.deepcopy(kwargs)
-            p3["type"] = "negative_negative"
-            p3["shape"] = f"oobb_hole"        
-            p3["radius_name"] = "m6"
-            if extra == "only_m3_hole" or "magnet" in extra:
-                p3["radius_name"] = "m3"
-            shift_y = 0
-            if extra == "countersunk":
-                p3["shape"] = f"oobb_screw_countersunk"
-                p3["radius_name"] = "m3"
-                shift_y =3
-            dep = 15
-            p3["depth"] = dep
-            #p3["m"] = "#"
-            rot1 = copy.deepcopy(rot)
-            rot1[0] = 90
-            rot1[1] = 0
-            p3["rot"] = rot1
-            pos1 = copy.deepcopy(pos)
-            
-            width_iterate = math.floor(width)
-            
-            pos1[0] += -(width_iterate-1) * 15 / 2
-            pos1[1] += height * 15 / 2 - shift_y
-            pos1[2] += depth +  7.5
-            p3["pos"] = pos1
-
-            
-
-            for i in range(width_iterate):            
-                p3 = copy.deepcopy(p3)
-                pos11 = copy.deepcopy(pos1)
-                pos11[0] += i * 15
-                p3["pos"] = pos11             
-                oobb_base.append_full(thing,**p3)
-                if i != width_iterate-1:
-                    p4 = copy.deepcopy(p3)
-                    pos12 = copy.deepcopy(pos11)
-                    pos12[0] += 7.5
-                    p4["pos"] = pos12
-                    p4["radius_name"] = "m3"
-                    if extra == "" or extra == "only_m3_hole":
-                        oobb_base.append_full(thing,**p4)
-                if "magnet" in extra:
-                    #add cylinders
-                    p5 = copy.deepcopy(kwargs)
-                    p5["type"] = "negative_negative"
-                    p5["shape"] = f"oobb_cylinder"
-                    p5["radius"] = 16/2
-                    #get the depth of the magnet from a string like this magnet_disc_m3_countersunk_15_mm_diameter_3_mm_depth depth can change
-                    string_split = extra.split("_")
-                    for i in range(len(string_split)):
-                        if string_split[i] == "depth":
-                            dep = float(string_split[i-2])
-
-
-                    
-                    p5["depth"] = dep
-                    #p5["m"] = "#"
-                    pos13 = copy.deepcopy(pos11)                                        
-                    pos13[2] += dep/2
-                    p5["pos"] = pos13
-                    rot1 = copy.deepcopy(rot)
-                    rot1[0] = 90
-                    p5["rot"] = rot1
-                    oobb_base.append_full(thing,**p5)
-        
-            #oobb_base.append_full(thing,**p3)
-
-
+    
     #add holes seperate
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
