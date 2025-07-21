@@ -25,11 +25,12 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: oobb
   oomp_part_number: ''
-  oomp_run: false
+  oomp_run: true
   oomp_size: tray
   oomp_type: part
-  overwrite: true
+  overwrite: false
   thickness: 60
+  typ: all
   type: oomlout_oobb_part_tray_tray
   width: 7
 manufacturer: ''
@@ -869,17 +870,18 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: oobb
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: tray
     oomp_type: part
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_plate
     thickness: 60
+    typ: all
     type: positive
     width: 7.066666666666666
   - filter: ''
@@ -894,22 +896,23 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: oobb
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: tray
     oomp_type: part
-    overwrite: true
+    overwrite: false
     pos:
     - 0
     - 0
     - 2
     radius: 4
-    save_type: none
+    save_type: all
     shape: sphere_rectangle
     size:
     - 102.0
     - 222.0
     - 105
     thickness: 60
+    typ: all
     type: negative
     width: 7
   - clearance: top
@@ -926,18 +929,19 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: oobb
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: tray
     oomp_type: part
-    overwrite: true
+    overwrite: false
     pos:
     - -45.0
     - -105.0
     - 2
     radius_name: m3
-    save_type: none
+    save_type: all
     shape: oobb_screw_countersunk
     thickness: 60
+    typ: all
     type: n
     width: 7
   - clearance: top
@@ -954,18 +958,19 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: oobb
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: tray
     oomp_type: part
-    overwrite: true
+    overwrite: false
     pos:
     - 45.0
     - -105.0
     - 2
     radius_name: m3
-    save_type: none
+    save_type: all
     shape: oobb_screw_countersunk
     thickness: 60
+    typ: all
     type: n
     width: 7
   - clearance: top
@@ -982,18 +987,19 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: oobb
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: tray
     oomp_type: part
-    overwrite: true
+    overwrite: false
     pos:
     - -45.0
     - 105.0
     - 2
     radius_name: m3
-    save_type: none
+    save_type: all
     shape: oobb_screw_countersunk
     thickness: 60
+    typ: all
     type: n
     width: 7
   - clearance: top
@@ -1010,27 +1016,28 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: oobb
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: tray
     oomp_type: part
-    overwrite: true
+    overwrite: false
     pos:
     - 45.0
     - 105.0
     - 2
     radius_name: m3
-    save_type: none
+    save_type: all
     shape: oobb_screw_countersunk
     thickness: 60
+    typ: all
     type: n
     width: 7
   components_string:
-  - oobb_plate_shape_positive_type_60_depth_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_oobb_oomp_mode_false_oomp_run_7.066666666666666_width_15.066666666666666_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size
-  - sphere_rectangle_shape_negative_type_0_0_2_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_oobb_oomp_mode_false_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_4_radius_102.0_222.0_105_size
-  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_-45.0_-105.0_2_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_oobb_oomp_mode_false_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
-  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_45.0_-105.0_2_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_oobb_oomp_mode_false_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
-  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_-45.0_105.0_2_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_oobb_oomp_mode_false_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
-  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_45.0_105.0_2_pos_none_save_type_true_navigation_true_overwrite_'3dpr'_modes_oobb_oomp_mode_false_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
+  - oobb_plate_shape_positive_type_60_depth_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_7.066666666666666_width_15.066666666666666_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size
+  - sphere_rectangle_shape_negative_type_0_0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_4_radius_102.0_222.0_105_size
+  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_-45.0_-105.0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
+  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_45.0_-105.0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
+  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_-45.0_105.0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
+  - oobb_screw_countersunk_shape_n_type_m3_radius_name_2_depth_45.0_105.0_2_pos_all_typ_all_save_type_true_navigation_false_overwrite_'3dpr'_modes_oobb_oomp_mode_true_oomp_run_7_width_15_height_60_thickness_oobb_oomp_classification_part_oomp_type_tray_oomp_size_top_clearance
   description: oomlout oobb part tray tray 7x15x60
   description_extra: ''
   description_main: 7_width_15_height_60_mm_depth
